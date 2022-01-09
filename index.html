@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .criket-fild{
+            width: 90%;
+            padding: 30px;
+        }
+        img{
+            width: 200px;
+            transition: transform .2s ease-in;
+        }
+        .criket-fild:hover img{
+            transform: rotate(-40deg);
+            transform-origin:right top;
+        }
+        .criket-fild:hover .ball{
+            transform: translate(600px, -100px) rotate(360deg);
+            transition: transform 2s ease-out;
+            transition-delay: .2s;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(#500000 , #ff4b4b , #197dff);
+            border-radius: 50%;
+            position: relative;
+            left: 325px;
+            bottom: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="criket-fild">
+        <img src="images/bat.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
